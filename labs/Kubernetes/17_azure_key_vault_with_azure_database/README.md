@@ -100,7 +100,7 @@ Now we are going install and Azure CSI driver.
 1. Install CSI driver:
 
     ```bash
-    helm install csi csi-secrets-store-provider-azure/csi-secrets-store-provider-azure -n csi --set secrets-store-csi-driver.syncSecret.enabled=true
+    helm install my-csi-secrets-store-provider-azure csi-secrets-store-provider-azure/csi-secrets-store-provider-azure --version 1.3.0 -n csi --set secrets-store-csi-driver.syncSecret.enabled=true
     ```
 
 1. Verify the driver was installed successfully. Enter:
